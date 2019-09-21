@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cart-Summary</title>
+
+        <meta charset="utf-8">
+        <!--   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        </head>
+        <style>
+            .center
+            {
+                text-align: center;
+            }
+            #sitems
+            {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .hide
+            {
+                display: none;
+            }
+            #userform
+            {
+                margin-left: 20%;
+                margin-right:20%;
+            }
+        </style>
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            <h3 class="navbar-text" id="title">Welcome to bike rentals!</h3>
+            </div>
+        </nav>
+        <div id=scontent>
+            <div class="jumbotron">
+                <h3 class="center" >Cart Summary</h3>
+                <ul class="list-group" id="sitems">
+                    <!-- <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li> -->
+                </ul>
+            <h4 class="center" id="total">$total</h4>
+            </div>
+            <div id="prompt">
+                <h3 class=center>Proceed to Checkout?</h3>
+                <div id="btngroup">
+                    <p class=center>
+                        <a class="btn btn-primary btn-lg" href="/www/view/home.html" role="button">Go Back</a>
+                        <a class="btn btn-primary btn-lg" href="#userform" role="button" onclick=checkout();>Checkout</a>
+                    </p>
+            </div>
+            <div id="userform" class="center hide">
+                    
+                    <div class="input-group">
+                        <span class="input-group-addon" >Name</span>
+                        <input autofocus type="text" class="form-control" id="formname" placeholder="" aria-describedby="basic-addon1">
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon">Card #</span>
+                        <input type="tel"  maxlength="16" class="form-control" id="cardno" placeholder="" aria-describedby="basic-addon2">
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon">Phone #</span>
+                        <input type="tel" maxlength="10" class="form-control" id="phoneno" placeholder="" aria-describedby="basic-addon3">
+                    </div>
+                    <br/>
+                    <a class=" center btn btn-success btn-lg" href="#/submit" role="button" onclick=submit();>Submit</a>
+            </div>
+        </div>
+        <br/>
+    </body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='cart.js'></script>
+</html>

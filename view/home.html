@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>checkoutDemo</title>
+
+        <meta charset="utf-8">
+        <!--   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        </head>
+        <style>
+            .center
+            {
+                text-align: center;
+            }
+            #content
+            {
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+        </style>
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            <h3 class="navbar-text" id="title">Welcome to bike rentals!</h3>
+            
+             <!--    <div class="navbar-header navbar-right">
+                <a class="navbar-brand" href="/www/view/cart.html">Cart</a>
+                </div> -->
+            </div>
+        </nav>
+
+        <div id=content>
+        <h2>Ride</h2><div class=divider></div>
+            <div class="row bike">
+                    <!--  <div class="col-xs-4 col-md-4">
+                            <div class="thumbnail">
+                                <img src="..." alt="#pic">
+                                <div class="caption">
+                                <h3>#bike</h3>
+                                <p>#wanted</p>
+                                <p><a href="#" class="btn btn-default" role="button">-</a> <a href="#" class="btn btn-primary" role="button">+</a></p>
+                                </div>
+                            </div>
+                            </div> -->
+            </div>
+        <h2>Safety</h2>    
+            <div class="row accessory">
+                    <!-- <div class="col-xs-4 col-md-4">
+                            <div class="thumbnail">
+                                <img src="..." alt="#pic">
+                                <div class="caption">
+                                <h3>#bike</h3>
+                                <p>#wanted</p>
+                                <p><a href="#" class="btn btn-default" role="button">-</a> <a href="#" class="btn btn-primary" role="button">+</a></p>
+                                </div>
+                            </div>
+                            </div> -->
+            </div>
+            <h2>Insurance</h2>
+            <div class="row addon">
+                    <!--   <div class="col-xs-4 col-md-4">
+                            <div class="thumbnail">
+                                <img src="..." alt="#pic">
+                                <div class="caption">
+                                <h3>#bike</h3>
+                                <p>#wanted</p>
+                                <p><a href="#" class="btn btn-default" role="button">-</a> <a href="#" class="btn btn-primary" role="button">+</a></p>
+                                </div>
+                            </div>
+                            </div> -->
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+            <div class="container center">
+                <button 
+                    type="button" 
+                    id=checkout 
+                    class="btn btn-primary navbar-btn disabled"
+                    onclick=next();
+                    >Next</button>
+                <button 
+                    type="button" 
+                    class="btn btn-default navbar-btn"
+                    onclick=clearCart();
+                    >Clear Selection</button>
+            </div>
+        </nav>
+    </body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='home.js'></script>
+</html>
